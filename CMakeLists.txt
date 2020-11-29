@@ -157,3 +157,9 @@ install(EXPORT deflate
 if (DEFLATE_BUILD_TEST_PROGRAMS)
   add_subdirectory(programs)
 endif()
+
+export(
+    EXPORT deflate
+    NAMESPACE deflate::
+)
+export(PACKAGE deflate)

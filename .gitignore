@@ -19,3 +19,5 @@
 /test_*
 tags
 cscope*
+.vs/
+out/
