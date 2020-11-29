@@ -5,7 +5,7 @@
 #ifndef LIB_UNALIGNED_H
 #define LIB_UNALIGNED_H
 
-#include "lib_common.h"
+#include <lib/lib_common.h>
 
 /***** Unaligned loads and stores without endianness conversion *****/
 

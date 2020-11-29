@@ -27,11 +27,18 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "deflate_compress.h"
-#include "deflate_constants.h"
-#include "unaligned.h"
 
-#include "libdeflate.h"
+#include <lib/deflate_compress.h>
+#include <lib/deflate_constants.h>
+#include <lib/unaligned.h>
+#include <libdeflate.h>
+
+
+
+#if defined(_MSC_VER)
+	#pragma warning(push)
+	#pragma warning(disable : 6385)
+#endif
 
 /*
  * By default, the near-optimal parsing algorithm is enabled at compression
@@ -56,9 +63,9 @@
  */
 #define MATCHFINDER_WINDOW_ORDER	15
 
-#include "hc_matchfinder.h"
+#include <lib/hc_matchfinder.h>
 #if SUPPORT_NEAR_OPTIMAL_PARSING
-#  include "bt_matchfinder.h"
+#  include <lib/bt_matchfinder.h>
 #endif
 
 /*
@@ -2852,3 +2859,7 @@ libdeflate_deflate_compress_bound(struct libdeflate_compressor *c,
 	size_t max_num_blocks = MAX(DIV_ROUND_UP(in_nbytes, MIN_BLOCK_LENGTH), 1);
 	return (5 * max_num_blocks) + in_nbytes + 1 + OUTPUT_END_PADDING;
 }
+
+#if defined(_MSC_VER)
+	#pragma warning(pop)
+#endif

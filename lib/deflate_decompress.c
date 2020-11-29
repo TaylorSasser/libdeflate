@@ -46,10 +46,9 @@
 
 #include <limits.h>
 
-#include "deflate_constants.h"
-#include "unaligned.h"
-
-#include "libdeflate.h"
+#include <lib/deflate_constants.h>
+#include <lib/unaligned.h>
+#include <libdeflate.h>
 
 /*
  * If the expression passed to SAFETY_CHECK() evaluates to false, then the

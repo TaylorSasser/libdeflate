@@ -29,9 +29,9 @@
 #define COMMON_COMMON_DEFS_H
 
 #ifdef __GNUC__
-#  include "compiler_gcc.h"
+#  include <common/compiler_gcc.h>
 #elif defined(_MSC_VER)
-#  include "compiler_msc.h"
+#  include <common/compiler_msc.h>
 #else
 #  pragma message("Unrecognized compiler.  Please add a header file for your compiler.  Compilation will proceed, but performance may suffer!")
 #endif

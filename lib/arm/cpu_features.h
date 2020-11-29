@@ -5,7 +5,7 @@
 #ifndef LIB_ARM_CPU_FEATURES_H
 #define LIB_ARM_CPU_FEATURES_H
 
-#include "../lib_common.h"
+#include <lib/lib_common.h>
 
 #if (defined(__arm__) || defined(__aarch64__)) && \
 	defined(__linux__) && \

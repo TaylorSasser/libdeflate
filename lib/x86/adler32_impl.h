@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "cpu_features.h"
+#include <lib/x86/cpu_features.h>
 
 /*
  * The following macros horizontally sum the s1 counters and add them to the

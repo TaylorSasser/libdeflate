@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "cpu_features.h"
+#include <lib/arm/cpu_features.h>
 
 /* NEON implementation */
 #undef DISPATCH_NEON
@@ -102,7 +102,7 @@ adler32_neon_chunk(const uint8x16_t *p, const uint8x16_t * const end,
 	*s1 += v_s1[0] + v_s1[1] + v_s1[2] + v_s1[3];
 	*s2 += v_s2[0] + v_s2[1] + v_s2[2] + v_s2[3];
 }
-#  include "../adler32_vec_template.h"
+#  include <lib/adler32_vec_template.h>
 #endif /* NEON implementation */
 
 #ifdef DISPATCH

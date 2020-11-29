@@ -32,7 +32,7 @@
 #  include <string.h>
 #endif
 
-#include "lib_common.h"
+#include <lib/lib_common.h>
 
 struct cpu_feature {
 	u32 bit;

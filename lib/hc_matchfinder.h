@@ -106,7 +106,7 @@
  * ----------------------------------------------------------------------------
  */
 
-#include "matchfinder_common.h"
+#include <lib/matchfinder_common.h>
 
 #define HC_MATCHFINDER_HASH3_ORDER	15
 #define HC_MATCHFINDER_HASH4_ORDER	16

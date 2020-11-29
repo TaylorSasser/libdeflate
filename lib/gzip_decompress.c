@@ -27,10 +27,15 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "gzip_constants.h"
-#include "unaligned.h"
+#include <lib/gzip_constants.h>
+#include <lib/unaligned.h>
+#include <libdeflate.h>
 
-#include "libdeflate.h"
+#if defined(_MSC_VER)
+	#pragma warning(push)
+	#pragma warning(disable : 6385)
+#endif
+
 
 LIBDEFLATEEXPORT enum libdeflate_result LIBDEFLATEAPI
 libdeflate_gzip_decompress_ex(struct libdeflate_decompressor *d,
@@ -146,3 +151,7 @@ libdeflate_gzip_decompress(struct libdeflate_decompressor *d,
 					     out, out_nbytes_avail,
 					     NULL, actual_out_nbytes_ret);
 }
+
+#if defined(_MSC_VER)
+	#pragma warning(pop)	
+#endif

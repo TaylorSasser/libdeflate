@@ -5,7 +5,7 @@
 #ifndef LIB_X86_CPU_FEATURES_H
 #define LIB_X86_CPU_FEATURES_H
 
-#include "../lib_common.h"
+#include <lib/lib_common.h>
 
 #if (defined(__i386__) || defined(__x86_64__)) && \
 	COMPILER_SUPPORTS_TARGET_FUNCTION_ATTRIBUTE

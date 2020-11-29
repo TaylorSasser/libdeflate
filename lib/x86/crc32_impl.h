@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "cpu_features.h"
+#include <lib/x86/cpu_features.h>
 
 /*
  * Include the PCLMUL/AVX implementation?  Although our PCLMUL-optimized CRC-32

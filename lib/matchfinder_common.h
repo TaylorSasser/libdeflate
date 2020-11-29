@@ -5,8 +5,8 @@
 #ifndef LIB_MATCHFINDER_COMMON_H
 #define LIB_MATCHFINDER_COMMON_H
 
-#include "lib_common.h"
-#include "unaligned.h"
+#include <lib/lib_common.h>
+#include <lib/unaligned.h>
 
 #ifndef MATCHFINDER_WINDOW_ORDER
 #  error "MATCHFINDER_WINDOW_ORDER must be defined!"
@@ -29,9 +29,9 @@ typedef s16 mf_pos_t;
 #undef matchfinder_rebase
 #ifdef _aligned_attribute
 #  if defined(__arm__) || defined(__aarch64__)
-#    include "arm/matchfinder_impl.h"
+#    include <lib/matchfinder_impl.h>
 #  elif defined(__i386__) || defined(__x86_64__)
-#    include "x86/matchfinder_impl.h"
+#    include <lib/x86/matchfinder_impl.h>
 #  endif
 #endif
 

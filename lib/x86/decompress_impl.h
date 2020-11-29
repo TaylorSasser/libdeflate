@@ -8,7 +8,7 @@
 #  define ATTRIBUTES	__attribute__((target("bmi2")))
 #  define DISPATCH	1
 #  define DISPATCH_BMI2	1
-#  include "../decompress_template.h"
+#  include <lib/x86/decompress_template.h>
 #endif
 
 #ifdef DISPATCH

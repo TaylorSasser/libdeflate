@@ -25,8 +25,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "../cpu_features_common.h" /* must be included first */
-#include "cpu_features.h"
+#include <lib/cpu_features_common.h>
+#include <lib/x86/cpu_features.h>
 
 #if X86_CPU_FEATURES_ENABLED
 

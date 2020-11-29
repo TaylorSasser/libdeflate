@@ -27,10 +27,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "unaligned.h"
-#include "zlib_constants.h"
 
-#include "libdeflate.h"
+#include <lib/unaligned.h>
+#include <lib/zlib_constants.h>
+#include <libdeflate.h>
 
 LIBDEFLATEEXPORT enum libdeflate_result LIBDEFLATEAPI
 libdeflate_zlib_decompress_ex(struct libdeflate_decompressor *d,

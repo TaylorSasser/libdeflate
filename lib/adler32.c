@@ -25,8 +25,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "lib_common.h"
-#include "libdeflate.h"
+#include <lib/lib_common.h>
+#include <libdeflate.h>
 
 /* The Adler-32 divisor, or "base", value. */
 #define DIVISOR 65521

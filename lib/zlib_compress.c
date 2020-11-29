@@ -27,11 +27,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "deflate_compress.h"
-#include "unaligned.h"
-#include "zlib_constants.h"
-
-#include "libdeflate.h"
+#include <lib/deflate_compress.h>
+#include <lib/unaligned.h>
+#include <lib/zlib_constants.h>
+#include <libdeflate.h>
 
 LIBDEFLATEEXPORT size_t LIBDEFLATEAPI
 libdeflate_zlib_compress(struct libdeflate_compressor *c,

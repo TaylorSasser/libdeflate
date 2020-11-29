@@ -35,8 +35,9 @@
  * added to API level 18 for ARM and level 21 for AArch64.
  */
 
-#include "../cpu_features_common.h" /* must be included first */
-#include "cpu_features.h"
+#include <lib/cpu_features_common.h>
+#include <lib/arm/cpu_features.h>
+
 
 #if ARM_CPU_FEATURES_ENABLED
 

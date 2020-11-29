@@ -26,7 +26,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "cpu_features.h"
+#include <lib/arm/cpu_features.h>
 
 /* Implementation using ARM CRC32 instructions */
 #undef DISPATCH_ARM
