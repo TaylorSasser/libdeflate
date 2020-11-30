@@ -7,7 +7,6 @@
 
 #define LIBEXPORT	__declspec(dllexport)
 #pragma warning(disable : 4018 4100 4127 4146 4232 4242 4244 4245 4256 4267 4310 4456 4668 4701 4703 4820 5045)
-__pragma(warning(disable : 6385 26451))
 
 /*
  * Old versions (e.g. VS2010) of MSC don't have the C99 header stdbool.h.

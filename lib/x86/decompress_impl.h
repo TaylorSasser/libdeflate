@@ -1,4 +1,4 @@
-#include "cpu_features.h"
+#include <lib/x86/cpu_features.h>
 
 /* Include the BMI2-optimized version? */
 #undef DISPATCH_BMI2
@@ -8,7 +8,7 @@
 #  define ATTRIBUTES	__attribute__((target("bmi2")))
 #  define DISPATCH	1
 #  define DISPATCH_BMI2	1
-#  include <lib/x86/decompress_template.h>
+#  include <lib/decompress_template.h>
 #endif
 
 #ifdef DISPATCH
